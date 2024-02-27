@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="./styles/navigationBar.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="/styles/project.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/end.css">
     <script src="./scripts/navBarMobile.js"></script>
     <script src="./scripts/about.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <title>Bugcat</title>
 </head>
 <body style="margin: 0px; width: 100%; font-family: sans-serif;">
@@ -58,10 +62,10 @@
             </div>
             <div class="menu-items-mobile" style="position: fixed; top: 50px; width: 100%; height: 100%; background-color: rgb(174, 227, 255); z-index: 0; opacity: 0.4;"></div>
             <div class="menu-items-mobile" style="position: fixed; top: 60px; right: 0px; background-color: rgb(9, 182, 251); width: 200px; height: 100%;">
-                <a class="nav-items-mobile" href="#home">HOME</a>
-                <a class="nav-items-mobile" href="#about">ABOUT</a>
-                <a class="nav-items-mobile" href="#project">PROJECT</a>
-                <a class="nav-items-mobile" href="#contact">CONTACT</a>
+                <a class="nav-items-mobile" href="#home" onclick="menu()">HOME</a>
+                <a class="nav-items-mobile" href="#about" onclick="menu()">ABOUT</a>
+                <a class="nav-items-mobile" href="#project" onclick="menu()">PROJECT</a>
+                <a class="nav-items-mobile" href="#contact" onclick="menu()">CONTACT</a>
             </div>
         </div>
     </div>
@@ -135,7 +139,7 @@
                         <img src="./images/java_icon.webp" alt="">
                         <div class="project-title">Math string</div>
                         <div class="project-overview">Handle out of range exception for integer</div>
-                        <button><a href="https://github.com/HaianCao/MathInStringJava">View more</a></button>
+                        <button><a href="https://github.com/HaianCao/MathInStringJava" target="_blank">View more</a></button>
                     </div>
                 </div>
                 <div class="project-details-items">
@@ -143,7 +147,7 @@
                         <img src="./images/bot_discord.png" alt="">
                         <div class="project-title">V-Moderator</div>
                         <div class="project-overview">A bot to moderate a linked-bot server</div>
-                        <button><a href="https://github.com/HaianCao/V-Moderator">View more</a></button>
+                        <button><a href="https://github.com/HaianCao/V-Moderator" target="_blank">View more</a></button>
                     </div>
                 </div>
                 <div class="project-details-items">
@@ -151,10 +155,34 @@
                         <img src="./images/template.png" alt="">
                         <div class="project-title">Template</div>
                         <div class="project-overview">A template with beautiful decoration</div>
-                        <button><a href="https://github.com/HaianCao/template">View more</a></button>
+                        <button><a href="https://github.com/HaianCao/template" target="_blank">View more</a></button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="contact-item" id="contact">
+        <div class="contact-container">
+            <div>Contact</div>
+            <div class="contact-form">
+                <div>
+                    <img src="./images/contact_image.jpg" alt="">
+                </div>
+                <div class="name contact-form-items">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Your email">
+                    <textarea name="" id="" cols="100" rows="10" placeholder="Your message"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-icon">
+        <div>
+            <a href="https://www.facebook.com/haian.cao.18" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://discord.com/invite/cEwqf4bbxd" target="_blank"><i class='bx bxl-discord'></i></a>
+            <a href="https://github.com/HaianCao" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/haiancao/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
     </div>
     
