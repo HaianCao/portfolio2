@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="./styles/navigationBar.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="/styles/project.css">
     <script src="./scripts/navBarMobile.js"></script>
+    <script src="./scripts/about.js"></script>
     <title>Bugcat</title>
 </head>
-<body style="margin: 0px; font-family: sans-serif;">
+<body style="margin: 0px; width: 100%; font-family: sans-serif;">
     <div class="navigation-bar-root" style="width: 100%; height: 50px; background-color: rgb(99, 99, 255);">
         <div class="nav-desktop">
             <a class="nav-items-desktop" href="" style="background-color: white; border-radius: 20px;"><img style="width: 51px;" src="./images/favicon.png" alt=""></a>
-            <a class="nav-items-desktop nav-text" href=""><div class="nav-link">HOME</div></a>
-            <a class="nav-items-desktop nav-text contact-nav" href=""><div class="nav-link about">ABOUT</div></a>
-            <a class="nav-items-desktop nav-text project-nav-container"><div class="nav-link project-nav">PROJECT
+            <a class="nav-items-desktop nav-text" href="#home"><div class="nav-link">HOME</div></a>
+            <a class="nav-items-desktop nav-text contact-nav" href="#about"><div class="nav-link about">ABOUT</div></a>
+            <a class="nav-items-desktop nav-text project-nav-container" href="#project"><div class="nav-link project-nav">PROJECT
                 <!-- <svg width="15" height="10" viewBox="0 0 8 5" class="navArrowDropdown">
                     <path d="M.707 1.707l2.586 2.586a1 1 0 001.414 0l2.586-2.586C7.923 1.077 7.477 0 6.586 0H1.414C.524 0 .077 1.077.707 1.707z" fill="#fff">
                     </path>
                 </svg> -->
             </div></a>
-            <a class="nav-items-desktop nav-text"><div class="nav-link">CONTACT
+            <a class="nav-items-desktop nav-text" href="#contact"><div class="nav-link">CONTACT
                 <!-- <svg width="15" height="10" viewBox="0 0 8 5" class="navArrowDropdown">
                     <path d="M.707 1.707l2.586 2.586a1 1 0 001.414 0l2.586-2.586C7.923 1.077 7.477 0 6.586 0H1.414C.524 0 .077 1.077.707 1.707z" fill="#fff">
                     </path>
@@ -56,10 +58,10 @@
             </div>
             <div class="menu-items-mobile" style="position: fixed; top: 50px; width: 100%; height: 100%; background-color: rgb(174, 227, 255); z-index: 0; opacity: 0.4;"></div>
             <div class="menu-items-mobile" style="position: fixed; top: 60px; right: 0px; background-color: rgb(9, 182, 251); width: 200px; height: 100%;">
-                <a class="nav-items-mobile" href="">HOME</a>
-                <a class="nav-items-mobile" href="">ABOUT</a>
-                <a class="nav-items-mobile" href="">PROJECT</a>
-                <a class="nav-items-mobile" href="">CONTACT</a>
+                <a class="nav-items-mobile" href="#home">HOME</a>
+                <a class="nav-items-mobile" href="#about">ABOUT</a>
+                <a class="nav-items-mobile" href="#project">PROJECT</a>
+                <a class="nav-items-mobile" href="#contact">CONTACT</a>
             </div>
         </div>
     </div>
@@ -72,8 +74,8 @@
                 <span class="HAMIC">HAMIC</span>
             </div> 
             <div>
-                <button class="home-button"><a href="">My Latest Work</a></button>
-                <button class="home-button"><a href="">Contact</a></button>
+                <button class="home-button"><a href="#project">My Latest Work</a></button>
+                <button class="home-button"><a href="#contact">Contact</a></button>
             </div>
         </div>
     </div>
@@ -90,14 +92,14 @@
                         <div class="about-intro-sentence">A lovely cat want to explode the world</div>
                     </div>
                     <div class="more-details">
-                        <p class="skills" onclick="">Skills</p>
-                        <p class="experience" onclick="">Experience</p>
-                        <p class="education" onclick="">Education</p>
+                        <p class="skills more-details-chosen" onclick="detailChoose('skills', 'about-skills')">Skills</p>
+                        <p class="experience" onclick="detailChoose('experience', 'about-experience')">Experience</p>
+                        <p class="education" onclick="detailChoose('education', 'about-education')">Education</p>
                     </div>
                 </span>
                 <div class="more-details-content">
                     <div>
-                        <ul class="about-skills">
+                        <ul class="about-skills more-details-content-chosen">
                             <li>Time management</li>
                             <li>Adaptability</li>
                             <li>Problem solving</li>
@@ -121,6 +123,17 @@
                     </div>
                 </div>
             </span>
+        </div>
+    </div>
+
+    <div class="project-item" id="project">
+        <div class="project-container">
+            <div>My Project</div>
+            <div class="project-details">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
         </div>
     </div>
     
